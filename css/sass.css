@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'babes-neue';
+  src: url("../fonts/BebasNeue.otf"); }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility; }
+
+.section_name {
+  line-height: 58px;
+  font-size: 48px;
+  text-align: center;
+  font-family: 'babes-neue', sans-serif;
+  font-weight: 400; }
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  background: rgba(11, 11, 11, 0.8);
+  top: 0px;
+  left: 0px;
+  display: none; }
+  .modal .modal_inner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    padding: 30px;
+    height: 60%; }
+    .modal .modal_inner .close {
+      width: 47px;
+      height: 47px;
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      cursor: pointer; }
+      .modal .modal_inner .close:hover {
+        opacity: 0.5; }
+
+iframe {
+  border-color: transparent; }
+
+.welcome .header {
+  height: 650px;
+  background: url(../img/hphoto.png) no-repeat;
+  background-color: rgba(0, 0, 0, 0.78);
+  background-size: cover;
+  position: relative; }
+  .welcome .header .triangle {
+    height: 100%;
+    width: 27.5%;
+    float: left;
+    background: #ed7d31;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 100%); }
+  .welcome .header .content {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 38%; }
+    .welcome .header .content .section_name {
+      color: #FFFFFF; }
+    .welcome .header .content p:nth-child(2) {
+      line-height: 30px;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-weight: 400; }
+    .welcome .header .content .btn {
+      line-height: 27px;
+      color: #FFFFFF;
+      font-size: 18px;
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 0px;
+      margin-top: 30px; }
+
+.creatures {
+  padding: 130px 0; }
+  .creatures .section_name {
+    text-align: left;
+    color: #515A5F;
+    padding-top: 30px;
+    line-height: 58px; }
+  .creatures .col-md-6:nth-child(1) {
+    padding-left: 154px; }
+  .creatures p {
+    color: #515A5F;
+    line-height: 21px; }
+  .creatures .contentwimg {
+    margin-top: 34px; }
+    .creatures .contentwimg img {
+      width: 34px;
+      height: 34px;
+      background: #ed7d31;
+      float: left;
+      margin-right: 20px;
+      border-radius: 100px;
+      border: 2px solid #ed7d31; }
+  .creatures .hexagon {
+    text-align: center;
+    margin: 7px !important;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 86.60px;
+    background-color: #ed7d31;
+    margin: 51.96px 0;
+    margin-top: 47px !important;
+    text-transform: uppercase; }
+    .creatures .hexagon p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 29px;
+      color: #FFFFFF;
+      font-size: 24px;
+      text-align: center;
+      font-family: 'babes-neue', sans-serif;
+      font-weight: 400; }
+  .creatures .hexagon:nth-child(3) {
+    margin-left: 89px !important; }
+  .creatures .hexagon:before,
+  .creatures .hexagon:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent; }
+  .creatures .hexagon:before {
+    bottom: 100%;
+    border-bottom: 43.3px solid #ed7d31; }
+  .creatures .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 43.3px solid #ed7d31; }
+
+.process {
+  padding: 130px 0px; }
+  .process .section_name, .process p {
+    color: #515A5F;
+    text-align: center; }
+  .process .row:nth-child(2) {
+    margin-top: 60px;
+    display: flex !important;
+    justify-content: space-between; }
+    .process .row:nth-child(2) div {
+      display: flex;
+      justify-content: center;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(237, 125, 49, 0.5);
+      margin: auto -163px; }
+    .process .row:nth-child(2) p {
+      align-self: center; }
+
+/*# sourceMappingURL=sass.css.map */
