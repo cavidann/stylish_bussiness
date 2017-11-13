@@ -57,21 +57,22 @@ body{
 iframe{
     border-color:transparent;
 }
-
+.header{
+    height: 650px;
+    background: url(../img/hphoto.png) no-repeat;
+    background-color: rgba(0, 0, 0, 0.78);
+    background-size:cover;
+    position: relative;
+    .triangle{
+        height:100%;
+        width: 27.5%;
+        float: left;
+        background: $orange;
+        clip-path: polygon(0% 100%, 0% 0%,100% 100%);
+    }
+}
 .welcome{
-    .header{
-        height: 650px;
-        background: url(../img/hphoto.png) no-repeat;
-        background-color: rgba(0, 0, 0, 0.78);
-        background-size:cover;
-        position: relative;
-        .triangle{
-            height:100%;
-            width: 27.5%;
-            float: left;
-            background: $orange;
-            clip-path: polygon(0% 100%, 0% 0%,100% 100%);
-        }
+    
         .content{
             text-align: center;
             position: absolute;
@@ -101,7 +102,7 @@ iframe{
                 margin-top:30px;
             }
         }
-    }
+    
 }
 
 .creatures{
@@ -204,6 +205,228 @@ iframe{
         p{
             
             align-self: center;
+        }
+    }
+}
+.menu{
+    background: $orange;
+    ul{
+        li{
+            cursor: pointer;
+            color: white;
+            display: inline-block;
+            text-transform: uppercase;
+            float: right;
+            height: 70px;
+            color: #FFFFFF;
+            font-size: 14px;
+            text-align: center;
+            font-family: 'lato', sans-serif;
+            font-weight: 400;
+            padding: 15px;
+            padding-top: 27px;
+        }
+        li:nth-child(1){
+            float: left;
+            line-height: 43px;
+            color: #FFFFFF;
+            font-size: 36px!important;
+            text-align: left;
+            font-family: 'babes-neue', sans-serif;
+            font-weight: 400;
+            padding: 15px;
+            // padding: 35px 0px;
+        }
+    }
+}
+.our_services{
+    padding: 130px;
+    p{
+        color: $black_header;
+        text-align: center;
+    }
+    .owl-carousel{
+        position: relative;
+        .owl-prev,.owl-next{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            border: 1px solid !important;
+            border-radius: 50%;
+            color: $orange!important;
+            font: {
+                size:30px!important;
+            }
+            &:hover{
+                background: transparent!important;
+            }
+            &:focus{
+                outline: 0px!important;
+            }
+        }
+        .owl-dots{
+            display: none!important;
+        }
+        .owl-prev{
+            left: 0;
+        }
+        .owl-next{
+            right: 0;
+        }
+        .item{
+            margin: 40px;
+            .icon{
+                width: 200px;
+                height: 200px;
+                background: $orange;
+                margin: auto;
+                border-radius: 50%;
+                position: relative;
+                img{
+                    width: 23%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            p:nth-child(2){
+                line-height: 36px;
+                color: #515A5F;
+                font-size: 30px;
+                text-align: center;
+                font-family: 'babes-neue', sans-serif;
+                font-weight: 400;
+                margin-top:25px;
+            }
+        }
+    }
+}
+.clients{
+    background:url(../img/clients.jpg) no-repeat;
+    background-size:cover; 
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    
+    .content{
+        margin-top: 20px;
+    }
+    img{
+        width: 200px!important;
+        border: 2px solid $orange;
+        border-radius: 50%;
+        margin: auto;
+        margin-top:30px; 
+    }
+    .active{
+        span{
+            background: $orange!important;
+        }
+    } 
+    .owl-dots{
+        margin-top:30px!important;
+        span{
+        width: 70px!important;
+        height: 5px!important;
+        }
+        .owl-dot{
+            &:hover{
+                span{
+                    background: $orange!important;
+                }
+            }
+        }
+    }
+}
+.layout{
+    padding: 130px;
+    padding-bottom:80px; 
+    width: 100%!important;
+    height: 100%!important;
+    background: rgba(0, 0, 0, 0.78);
+}
+.video{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    background:url(../img/clients.jpg) no-repeat;
+    background-size:cover; 
+    background-attachment: fixed;
+    iframe{
+        margin-top: 40px;
+    }
+}
+.hire_us{
+    .header{
+        background: url(../img/hire.jpg) no-repeat;
+        background-size:cover; 
+        .content{
+            width: 74%;
+        }
+        p{
+            padding-top: 130px;
+            line-height: 144px;
+            color: #ED7D31;
+            font-size: 120px;
+            text-align: right;
+            font-family: "babes-neue", sans-serif;
+            font-weight: 400;
+        }
+    }
+}
+.map{
+    iframe{
+        width: 100%!important;
+    }
+}
+footer{
+    background: $orange;
+    padding: 20px 0px;
+    p{
+        text-align: center;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+    }
+}
+.contact_us{
+    background:url(../img/clients.jpg) no-repeat;
+    background-size:cover; 
+    background-attachment: fixed;
+    color: white;
+    p{
+    text-align: center;
+    }
+    form{
+        width: 80%!important;
+        margin: auto;
+        margin-top:60px; 
+        input{
+            height: 53px!important;
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: white;
+          }
+        input,textarea{
+            background: $orange;
+            border: 0px;
+            border-radius: 0%;
+        }
+        button{
+            border: 2px solid white;
+            background: $orange;
+            text-align: center;
+            line-height: 58px;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: 'babes-neue', sans-serif;
+            font-weight: 400;
+            font-size: 27px;
+            padding: 0px 30px ;
         }
     }
 }
